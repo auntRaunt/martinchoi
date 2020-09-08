@@ -1,13 +1,18 @@
 window.onload = function () {
-  const logo = document.getElementById("logo");
+  var scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 1000
+  });
+
   const header = document.getElementById("header");
   const about = document.getElementById("about");
-  const interest = document.getElementById("interest");
   const projects = document.getElementById("projects");
+
   const nav = document.querySelector(".nav-info");
   const navLis = document.querySelectorAll(".nav-info li");
 
   const proImgs = document.querySelectorAll(".pro-content-img");
+  const proCarrow = document.getElementById("pro-C-arrow");
+  const proCwrap = document.getElementById("pro-C-1-wrap");
 
   function homeDisplay() {
     header.style.display = "flex";
@@ -34,7 +39,6 @@ window.onload = function () {
           break;
         case "navLi-about":
           aboutDisplay();
-          //only about have problem
           break;
         case "navLi-pro":
           projectDisplay();
@@ -63,13 +67,15 @@ window.onload = function () {
 
   navSlide();
 
+  //mouse to the image under each project will trigger below event
   for (let i = 0; i < proImgs.length; i++) {
     proImgs[i].addEventListener("mouseover", function (e) {
       let eachId = e.target.id;
       // console.log(document.getElementById(`${eachId}`).className === content);
-      let groupDiv = document.getElementById(`${eachId}-group`);
+      // let groupDiv = document.getElementById(`${eachId}-group`);
       let hoverDiv = document.getElementById(`${eachId}-hover`);
       hoverDiv.style.display = "block";
+      // groupDiv.style.overflow = "hidden";
     });
 
     proImgs[i].addEventListener("mouseout", function (e) {
@@ -78,4 +84,8 @@ window.onload = function () {
       hoverDiv.style.display = "none";
     });
   }
+
+  proCarrow.addEventListener("click", function () {
+    proCwrap.style.tranform = "translateY(30vh)";
+  });
 };

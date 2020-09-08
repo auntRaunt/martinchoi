@@ -22,25 +22,32 @@
   width: 90vw;
   height: 70vh;
   /* border: 1px solid white; */
-  margin-top: 30vh;
+  margin-top: 40vh;
   justify-content: space-between;
 }
 
 .group {
   width: 20vw;
-  border: 1px solid white;
+  /* border: 1px solid white; */
+  /* overflow: hidden; */
+  position: relative;
 }
-
 
 .group h1 {
   text-align: center;
   font-size: 2rem;
 }
 
+.group-wrap{
+  height: 55vh;
+  overflow-y: hidden;
+}
+
+
 .project {
   width: 15vw;
   height: 25vh;
-  margin: 40px auto;
+  margin: 3vh auto;
 }
 
 .project img {
@@ -62,13 +69,19 @@
   height: 25vh;
   border: 1px solid white;
   position: absolute;
-  top: -2vh;
-  left: 12vw;
+  top: 4vh;
+  /* left: 12vw; */
   display: none;
 }
 
 .pro-hover img {
   height: 100%;
+}
+
+.arrow{
+  position: absolute;
+  bottom: -10px;
+  left: 45%;
 }
 
 
