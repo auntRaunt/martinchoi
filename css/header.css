@@ -1,0 +1,188 @@
+.header {
+  background-image: url("Basketball.jpg");
+  width: 100%;
+  height: 150vh;
+  background-size: 100% 100%;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.incoming-sentence {
+  display: flex;
+  width: 40vw;
+  justify-content: space-around;
+  position: absolute;
+  top: 30%;
+}
+
+.letter {
+  font-size: 5rem;
+  color: white;
+}
+
+.incoming-intro {
+  position: absolute;
+  top: 40%;
+}
+
+.incoming-intro p {
+  font-size: 2rem;
+  color: white;
+  letter-spacing: 3px;
+}
+
+@media (max-width: 768px) {
+  .incoming-sentence {
+    top: 20%;
+  }
+  .incoming-intro {
+    top: 35%;
+  }
+  .letter {
+    font-size: 3rem;
+    letter-spacing: 10px;
+  }
+  .incoming-intro p {
+    font-size: 1.5rem;
+    padding: 5px 10px;
+    text-align: center;
+  }
+}
+
+/* .header {
+  background-image: url("Basketball.jpg");
+  width: 100%;
+  height: 150vh;
+  background-size: 100% 100%;
+  overflow-x: hidden;
+} */
+
+/* .incoming-sentence {
+  letter-spacing: 5rem;
+  font-size: 7rem;
+  color: white;
+  position: relative;
+  top: 25%;
+  /* justify-content: center; 
+  text-align: center;
+  /* overflow-x: hidden; 
+}
+
+.incoming-sentence div{
+    display: inline;
+    text-align: center;
+}
+
+.letter{
+    position: absolute;
+}
+
+#M{
+    left: 28%;
+    animation: floatM 2s ease;
+}
+#A{
+    left: 38%;
+    animation: floatA 2s ease;
+}
+#R{
+    left: 46%;
+    animation: floatR 2s ease;
+}
+#T{
+    left: 54%;
+    animation: floatT 2s ease;
+}
+#I{
+    left: 62%;
+    animation: floatI 2s ease;
+}
+#N{
+    left: 67%;
+    animation: floatN 2s ease;
+}
+
+@keyframes floatM{
+    0%{
+        left: 110%;
+    }
+    100%{
+        left: 28%;
+    }
+}
+@keyframes floatA{
+    0%{
+        left: 220%;
+    }
+    100%{
+        left: 38%;
+    }
+}
+@keyframes floatR{
+    0%{
+        left: 330%;
+    }
+    100%{
+        left: 46%;
+    }
+}
+@keyframes floatT{
+    0%{
+        left: 440%;
+    }
+    100%{
+        left: 54%;
+    }
+}
+@keyframes floatI{
+    0%{
+        left: 550%;
+    }
+    100%{
+        left: 62%;
+    }
+}
+@keyframes floatN{
+    0%{
+        left: 660%;
+    }
+    100%{
+        left: 67%;
+    }
+} */
+
+/* .incoming-intro {
+  position: relative;
+  top: 40%;
+  color: white;
+  letter-spacing: 3px;
+  font-size: 2rem;
+  text-align: center;
+  /* line-height: 1.6rem;
+} */
+
+/* 
+.incoming-intro p{
+    position: absolute;
+    left: 13%;
+    opacity: 1;
+    animation: floatSentence 5s ease-in;
+} */
+
+@keyframes floatSentence {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  75% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
+}

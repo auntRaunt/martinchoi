@@ -1,0 +1,9 @@
+.interest {
+  background-image: url("anime1.jpg");
+  width: 100%;
+  height: 150vh;
+  background-size: 100% 100%;
+  overflow: hidden;
+  transition: 1s;
+  display: none;
+}
