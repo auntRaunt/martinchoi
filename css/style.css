@@ -4,6 +4,14 @@
   font-family: "Poppins", sans-serif;
 }
 
+a, a:hover{
+  color: white;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
 .wrapper {
   position: relative;
 }
@@ -36,4 +44,18 @@
     #footer{
         left: 8%;
     }
+}
+
+.photos {
+  width: 150px;
+}
+
+.large_photo{
+  width: 300px;
+}
+
+.project-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
